@@ -1,7 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import VueZxing from "vue-zxing";
 
+Vue.use(VueZxing);
 Vue.use(VueRouter);
 
 const routes = [
@@ -14,7 +16,15 @@ const routes = [
     path: "/scanner",
     name: "Scanner",
     component: () =>
-      import(/* webpackChunkName: "scanner" */ "../components/BarcodeScanner"),
+      import(
+        /* webpackChunkName: "group-scanner" */ "../components/BarcodeScanner"
+      ),
+  },
+  {
+    path: "/vue-zxing",
+    name: "VueZxing",
+    component: () =>
+      import(/* webpackChunkName: "group-scanner" */ "../components/Zxing"),
   },
   {
     path: "/about",
