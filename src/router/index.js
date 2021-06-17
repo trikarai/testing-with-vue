@@ -27,6 +27,14 @@ const routes = [
       import(/* webpackChunkName: "group-scanner" */ "../components/Zxing"),
   },
   {
+    path: "/vue-zxing-scanner",
+    name: "VueZxingScanner",
+    component: () =>
+      import(
+        /* webpackChunkName: "group-scanner" */ "../components/VueZxingScanner"
+      ),
+  },
+  {
     path: "/about",
     name: "About",
     // route level code-splitting

@@ -4,7 +4,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/scanner">Zxingjs</router-link> |
-      <router-link to="/vue-zxing">VueZxing</router-link>
+      <router-link to="/vue-zxing">VueZxing</router-link> |
+      <router-link to="/vue-zxing-scanner">Vue Zxing Scanner</router-link>
     </div>
     <router-view />
   </div>
